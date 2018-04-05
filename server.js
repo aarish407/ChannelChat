@@ -1,4 +1,4 @@
-var PORT      = process.env.PORT || 3000;
+var PORT      = process.env.PORT || 3009;
 var express   = require('express');
 var app       = express();
 var http      = require('http').Server(app);
@@ -110,7 +110,7 @@ io.on('connection', function(socket) {
 });
 
 http.listen(PORT, function() {
-  console.log('Listening on port 3000');
+  console.log('Listening on port 3009');
 });
 
 module.exports = app
