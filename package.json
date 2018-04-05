@@ -1,0 +1,29 @@
+{
+  "name": "turing_slack",
+  "version": "1.0.0",
+  "description": "turing school module 4: slack clone - using websockets build a node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jxandery/turing_slack.git"
+  },
+  "author": "Jack Yeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jxandery/turing_slack/issues"
+  },
+  "homepage": "https://github.com/jxandery/turing_slack#readme",
+  "dependencies": {
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "mocha": "^2.3.4",
+    "moment": "^2.11.1",
+    "pry": "^0.4.2",
+    "socket.io": "^1.3.7",
+    "supertest": "^1.1.0"
+  }
+}
