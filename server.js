@@ -65,26 +65,26 @@ io.on('connection', function(socket) {
       socket.leave(userData.room);
       io.to(userData.room).emit('message', {
         name: 'Multi Channel bot',
-        text: userData.name + ' has left the chat room.',
+        text: '<strong>' + userData.name + '</strong> has left the chat room.',
         timestamp: moment().valueOf()
       });
       delete clientInfo[socket.id];
     }
   });
 
-  //When a client wants to join a room or create a new room 
+  //when a client wants to join a room or create a new room 
 
   socket.on('joinRoom', function(req){
     clientInfo[socket.id] = req;
     socket.join(req.room);
     socket.broadcast.to(req.room).emit('message', {
       name: 'Multi Channel bot',
-      text: req.name + ' has joined #' + req.room,
+      text: req.name + ' has joined <strong>#' + req.room + '</strong>',
       timestamp: moment().valueOf()
     });
   });
 
-  //When a client wants to send a message in the chat room
+  //when a client wants to send a message in the chat room
 
   socket.on('message', function(message) {
     if (message.text === '@currentUsers') {
