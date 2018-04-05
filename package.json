@@ -1,7 +1,7 @@
 {
-  "name": "turing_slack",
+  "name": "ChannelChat",
   "version": "1.0.0",
-  "description": "turing school module 4: slack clone - using websockets build a node app",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/.bin/mocha",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jxandery/turing_slack.git"
+    "url": "https://github.com/aarish407/ChannelChat.git"
   },
   "author": "Jack Yeh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jxandery/turing_slack/issues"
+    "url": "https://github.com/aarish407/ChannelChat.git"
   },
-  "homepage": "https://github.com/jxandery/turing_slack#readme",
+  "homepage": "",
   "dependencies": {
     "chai": "^3.4.1",
     "express": "^4.13.3",
